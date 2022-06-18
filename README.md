@@ -9,6 +9,7 @@ This is my first ML Project
 2. [Heroku Account](https://dashboard.heroku.com/login)
 3. [VS Code IDE](https://code.visualstudio.com/download)
 4. [GIT cli](https://git-scm.com/downloads)
+5. [Git Documentation](https://git-scm.com/docs/gittutorial)
 
 
 Creating Conda Environment
@@ -65,6 +66,44 @@ To check main url
 ...
 git remote -v
 ...
+
+To setup CI/CD pipeline in heroku we need 3 information
+
+1. Heroku Email = dinesh.tncbca@gmail.com
+2. Heroku API = fe8b1aec-33f1-4aa9-a7aa-012722b2ca4a
+3. Heroku_App_name = ml-first-project-helloword
+
+
+BUILD DOCER IMAGE:
+...
+docker build -t <image_name>:<tagname>
+
+> Note: Image name for docker must be lowercase
+
+To list docker image
+...
+docker images
+...
+
+Run docker image
+...
+docker run -p 5000:5000 -e PORT=5000 0478899b3aea
+...
+
+To check running containers in docker
+...
+docker ps
+...
+
+To stop docker container
+...
+docker stop <container_id>
+...
+
+
+
+
+
 
 
 
